@@ -1,0 +1,10 @@
+.account{
+    color: blue;
+    margin-left: 10px;
+}
+
+.wrapper{
+    margin-top: 30px;
+    gap: 50px;
+    text-align: center;
+}
