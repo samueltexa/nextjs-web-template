@@ -25,12 +25,22 @@ export default function Page() {
             </a>
             , brought to you by Vercels.
           </p>
+          <div className="flex items-center gap-3">
           <Link
             href="/login" onClick={(e)=>{e.preventDefault();router.push('/screens/login')}}
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
+          <Link
+            href="/login" onClick={(e)=>{e.preventDefault();router.push('/screens/register')}}
+            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+          >
+            <span>Register</span> <ArrowRightIcon className="w-5 md:w-6" />
+          </Link>
+
+          </div>
+
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
